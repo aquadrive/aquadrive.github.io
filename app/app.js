@@ -140,3 +140,4 @@ taskForm.addEventListener("submit", async (e) => {
   // Rendering the updated tasks
   renderTasks();
 });
+
