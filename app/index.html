@@ -87,9 +87,9 @@
 
 <div class="post-body container">
 <ol>
-  <li><img width="200px" height="280px" class="rounded pr-3" src="../images/1.jpg"></li>
-  <li><img width="200px" height="280px" class="rounded pr-3" src="../images/1.jpg"></li>
-  <li><img width="200px" height="280px" class="rounded pr-3" src="../images/1.jpg"></li>
+  <li><img width="200px" height="280px" class="rounded pr-3" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/da/8c/c7/little-morgan-s-resort.jpg?w=600&h=400&s=1"></li>
+  <li><img width="200px" height="280px" class="rounded pr-3" src="https://wp.diarionacional.net/wp-content/uploads/sites/3/2023/03/ISLA-DEL-AMOR-19.jpeg"></li>
+  <li><img width="200px" height="280px" class="rounded pr-3" src="https://paraisoclub.com/wp-content/uploads/2023/02/Corn-Island-10-1024x524.jpg"></li>
   </ol>
 </div>
 
@@ -107,21 +107,21 @@
 
 
 <script>
- function onSignIn(googleUser) {
-  try {
-    var profile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId());
-    console.log('Name: ' + profile.getName());
-    console.log('Image URL: ' + profile.getImageUrl());
-    console.log('Email: ' + profile.getEmail());
-    var id_token = googleUser.getAuthResponse().id_token;
-    console.log(id_token);
-  } catch (error) {
-    console.error('Error retrieving user data:', error);
+  function onSignIn(googleUser) {
+    try {
+      var profile = googleUser.getBasicProfile();
+      console.log('ID: ' + profile.getId());
+      console.log('Name: ' + profile.getName());
+      console.log('Image URL: ' + profile.getImageUrl());
+      console.log('Email: ' + profile.getEmail());
+      var id_token = googleUser.getAuthResponse().id_token;
+      console.log(id_token);
+    } catch (error) {
+      console.error('Error retrieving user data:', error);
+    }
   }
-}
-
-</script>
+  </script>
+  
 <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
